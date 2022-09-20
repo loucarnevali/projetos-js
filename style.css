@@ -22,6 +22,7 @@ body {
 
 .cabecalho {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -59,6 +60,7 @@ body {
   padding: 8px 16px;
   background-color: #ecf4ff;
   border-radius: 100px;
+  margin-top: 15px;
 }
 
 .projetos {
@@ -97,7 +99,6 @@ body {
 }
 
 /* DARK MODE */
-
 .dark {
   background: linear-gradient(236.85deg, #4f3753 27.26%, #705166 96.03%);
 }
@@ -116,4 +117,52 @@ body {
   background-color: #1c1c1c;
   color: #ffffff;
   border: 2px solid #f7f7f7;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 500px) {
+  .container {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .titulo {
+    margin-top: auto;
+  }
+
+  .foto-perfil {
+    width: 150px;
+    height: 150px;
+  }
+
+  .titulo h1 {
+    font-size: 25px;
+  }
+
+  .titulo h3 {
+    font-size: 20px;
+  }
+
+  .tema button {
+    font-size: 20px;
+  }
+
+  .projetos-titulo {
+    font-size: 25px;
+  }
+
+  .projetos-item {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .container {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .perfil {
+    display: block;
+  }
 }
